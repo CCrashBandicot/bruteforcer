@@ -1,0 +1,10 @@
+javascript:
+u="USER";
+p=['',u+'123','12345­6','password'];
+f=document.forms[0];
+e=f.elements;
+for((i)in(p)){
+e[0].value=u;
+e[1].value=p[i];
+f.target='_blank';
+f.submit()}
